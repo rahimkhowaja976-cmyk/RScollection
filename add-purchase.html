@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Purchase | RS Collection</title>
+  <link rel="icon" href="../assets/images/logo.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">RS Collection</div>
+      <nav>
+        <a href="../auth/login.html">Login</a><a href="../auth/register.html">Register</a><a href="../dashboard/dashboard.html">Dashboard</a><a href="../products/products.html">Products</a><a href="../products/add-product.html">Add Product</a><a href="../products/edit-product.html">Edit Product</a><a href="../products/product-details.html">Product Details</a><a href="../products/product-category.html">Product Category</a><a href="purchase.html">Purchase</a><a href="add-purchase.html" style="font-weight:700; color:#fff; background: rgba(255,255,255,0.16);">Add Purchase</a><a href="purchase-history.html">Purchase History</a><a href="purchase-invoice.html">Purchase Invoice</a><a href="../sales/sales.html">Sales</a><a href="../sales/new-sale.html">New Sale</a><a href="../sales/sales-history.html">Sales History</a><a href="../sales/sales-return.html">Sales Return</a><a href="../sales/receipt.html">Receipt</a><a href="../inventory/inventory.html">Inventory</a><a href="../inventory/stock-list.html">Stock List</a><a href="../inventory/stock-adjustment.html">Stock Adjustment</a><a href="../inventory/low-stock.html">Low Stock</a><a href="../inventory/stock-history.html">Stock History</a><a href="../customers/customers.html">Customers</a><a href="../customers/add-customer.html">Add Customer</a><a href="../customers/customer-profile.html">Customer Profile</a><a href="../customers/customer-history.html">Customer History</a><a href="../suppliers/suppliers.html">Suppliers</a><a href="../suppliers/add-supplier.html">Add Supplier</a><a href="../suppliers/supplier-profile.html">Supplier Profile</a><a href="../suppliers/supplier-history.html">Supplier History</a><a href="../reports/reports.html">Reports</a><a href="../reports/sales-report.html">Sales Report</a><a href="../reports/purchase-report.html">Purchase Report</a><a href="../reports/stock-report.html">Stock Report</a><a href="../reports/profit-report.html">Profit Report</a><a href="../reports/customer-report.html">Customer Report</a><a href="../settings/settings.html">Settings</a><a href="../settings/company.html">Company</a><a href="../settings/users.html">Users</a><a href="../settings/roles.html">Roles</a><a href="../settings/backup.html">Backup</a><a href="../settings/profile.html">Profile</a><a href="../components/head.html">Head</a><a href="../components/navbar.html">Navbar</a><a href="../components/sidebar.html">Sidebar</a><a href="../components/footer.html">Footer</a><a href="../components/loader.html">Loader</a><a href="../components/modal.html">Modal</a><a href="../components/toast.html">Toast</a><a href="../components/cards.html">Cards</a><a href="../components/table.html">Table</a><a href="../components/pagination.html">Pagination</a><a href="../components/charts.html">Charts</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h2 style="margin:0">Add Purchase</h2>
+          <p style="margin:4px 0 0; color:var(--muted)">Record vendor purchases with invoice references and payment details.</p>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span id="userNameDisplay" style="font-weight: 600; color: var(--text);"></span>
+          <button class="btn btn-secondary" onclick="Authentication.logout()">Logout</button>
+        </div>
+      </div>
+      <div class="card">
+  <h2>Module overview</h2>
+  <p>The page is ready for your business workflow, data tables, charts, or forms.</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Current status</h3><p>Everything is ready for the next workflow step.</p></div>
+    <div class="card"><h3>Recent activity</h3><ul><li>New purchase recorded</li><li>Inventory adjusted</li><li>Customer order updated</li></ul></div>
+  </div>
+  <table>
+    <thead><tr><th>Item</th><th>Value</th><th>Status</th></tr></thead>
+    <tbody><tr><td>Module entry</td><td>$1,250.00</td><td><span class="badge">Ready</span></td></tr><tr><td>Follow-up task</td><td>$450.00</td><td><span class="badge">Pending</span></td></tr></tbody>
+  </table>
+</div>
+    </main>
+  </div>
+  <script src="../assets/js/utils.js"></script>
+  <script src="../assets/js/database.js"></script>
+  <script src="../assets/js/forms.js"></script>
+  <script src="../assets/js/render.js"></script>
+  <script src="../assets/js/actions.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
