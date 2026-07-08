@@ -1,0 +1,1 @@
+const storageName = 'rs-collection-demo';\n
